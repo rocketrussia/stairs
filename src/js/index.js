@@ -21,3 +21,61 @@ $(document).ready(function () {
         }
     });
 });
+//slider price
+$("#priceFromFilterSlider").slider({
+    animate: "slow",
+    range: true,
+    values: [10, 65],
+    slide: function (event, ui) {
+        $("#countStart").val(ui.values[0])
+        $("#countFinish").val(ui.values[1]);
+    }
+});
+$("#countStart").val($("#priceFromFilterSlider").slider("values", 0))
+$("#countFinish").val($("#priceFromFilterSlider").slider("values", 1))
+
+//timer 9-1, вычитать из нужного месяца единицу
+$('#defaultCountdown').countdown({
+    until: new Date(2020, 12 - 1, 21),
+    format: 'dHM'
+});
+
+$(document).ready(function () {
+    $('.mainGalery__box').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+    });
+});
+  $('.mainGalery__box').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
