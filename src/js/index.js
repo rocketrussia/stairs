@@ -80,17 +80,6 @@ $('.mainGalery__box').slick({
   ]
 });
 
-
-$('.catalog__item__slider').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false
-});
-
-
   $( ".dropdown, .mainNav__subMenu" ).mouseout(function() {
     $(".mainNav__subMenu").removeClass("active");
   });
