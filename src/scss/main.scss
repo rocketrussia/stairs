@@ -604,6 +604,7 @@ body {
         }
         &__slider {
             position: relative;
+<<<<<<< HEAD
             .slick-dots {
                 margin: 0;
                 padding: 0;
@@ -638,6 +639,63 @@ body {
                 .slick-active button {
                     background-color: #f6952b;
                     opacity: 1;
+=======
+            ul {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                li {
+                    list-style-type: none;
+                    width: calc( 20% - 6px );
+                }
+                button {
+                    border: none;
+                    cursor: pointer;
+                    height: 4px;
+                    background-color: #ffffff;
+                    opacity: 0.5;
+                    font-size: 0;
+                    width: 100%;
+                    transition: all .2s;
+                    &:focus {
+                        outline: 0;
+                        border: none;
+                    }
+                }
+                .slick-active {
+                    button {
+                        background-color: #f6952b;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &__params {
+            &__item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 14px;
+                span {
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #949393;
+                    margin-left: 6px;
+                    margin-right: 5px;
+                }
+                p {
+                    color: #353535;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 0;
+>>>>>>> 30cf8f92a692be9f2a2383623a106580a3401a70
                 }
             }
         }
@@ -1717,5 +1775,31 @@ body {
     }
     svg path {
         fill: #ba782d;
+    }
+}
+.catalogList {
+    &__caption {
+        font-family: Futuris;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4d4d4d;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        border: 1px solid #ebe4de;
+        background-color: #ffffff;
+        margin-bottom: 7px;
+        p {
+            width: 55%;
+        }
+        img {
+            max-width: 45%;
+            width: 100%;
+        }
     }
 }
