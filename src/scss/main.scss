@@ -1945,6 +1945,68 @@ body {
 
 /* Articles Off */
 
+/* Placing */
+
+.placing {
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    thead {
+        th {
+            border: 1px solid #38b33a;
+            color: #38b33a;
+            background-color: #ebf7eb;
+        }
+
+        border: 1px solid #38b33a;
+        border-radius: 4px;
+        border-radius: 4px 4px 0 0;
+        padding: 20px 70px 20px 70px;
+        position: relative;
+        top: 1px;
+
+        color: #38b33a;
+        font-family: Futuris;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+
+    th, td {
+        border: 1px solid #eee;
+        padding: 10px 0 10px 60px;
+    }
+
+    tbody {
+        background-color: white;
+    }
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    tr:nth-child(even){
+        background-color: #f8fcf8;
+    }
+
+    tr:hover {
+        background-color: #F9F7F5;
+    }
+
+    &__table {
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+}
+
+/* Placing Off */
+
 .catalog__content--float {
     display: block;
     width: 100%;
